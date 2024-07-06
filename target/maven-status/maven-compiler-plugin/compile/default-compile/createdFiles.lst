@@ -1,0 +1,10 @@
+org\cst8288Lab2\studentcourse\StudentCourse.class
+org\cst8288Lab2\parser\PropertiesParser.class
+org\cst8288Lab2\reporting\Reporter.class
+org\cst8288Lab2\studentcourse\Course.class
+org\cst8288Lab2\studentcourse\Student.class
+org\cst8288Lab2\dboperations\DBOperations.class
+org\cst8288Lab2\connection\DBConnection.class
+org\cst8288Lab2\Lab2Starter.class
+org\cst8288Lab2\parser\CSVParser.class
+validation\InputValidation.class
