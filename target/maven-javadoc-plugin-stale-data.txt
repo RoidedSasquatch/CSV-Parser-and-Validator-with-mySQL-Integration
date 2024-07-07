@@ -1,0 +1,57 @@
+@options
+@packages
+-classpath
+'C:/Users/Dan/.m2/repository/mysql/mysql-connector-java/8.0.24/mysql-connector-java-8.0.24.jar;C:/Users/Dan/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'C:/Users/Dan/Desktop/Lab2-maven/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Dan/Desktop/Lab2-maven/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'S24_Lab2 1.0 API'
+-use
+-version
+-windowtitle
+'S24_Lab2 1.0 API'
+org.cst8288Lab2.connection
+org.cst8288Lab2.dboperations
+org.cst8288Lab2
+org.cst8288Lab2.parser
+org.cst8288Lab2.reporting
+org.cst8288Lab2.studentcourse
+validation
+C:\Users\Dan\.m2\repository\mysql\mysql-connector-java\8.0.24\mysql-connector-java-8.0.24.jar = 1718750727469
+C:\Users\Dan\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar = 1718750727021
+C:\Users\Dan\Desktop\Lab2-maven\src\main\java = 1720133938698
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\allclasses-index.html = 1720370731708
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\allpackages-index.html = 1720370731711
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\copy.svg = 1720370731736
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\element-list = 1720370731578
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\help-doc.html = 1720370731733
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\index-all.html = 1720370731726
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\index.html = 1720370731693
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\javadoc.bat = 1720370681922
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\link.svg = 1720370731738
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\member-search-index.js = 1720370731714
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\module-search-index.js = 1720370731712
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\overview-summary.html = 1720370731729
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\overview-tree.html = 1720370731690
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\package-search-index.js = 1720370731713
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\script.js = 1720370731735
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\search-page.js = 1720370731741
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\search.html = 1720370731728
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\search.js = 1720370731740
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\stylesheet.css = 1720370731734
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\tag-search-index.js = 1720370731716
+C:\Users\Dan\Desktop\Lab2-maven\target\site\apidocs\type-search-index.js = 1720370731714

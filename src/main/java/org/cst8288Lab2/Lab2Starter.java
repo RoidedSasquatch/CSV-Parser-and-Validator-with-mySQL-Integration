@@ -22,13 +22,20 @@ import validation.InputValidation;
 /**
  * This class contains the main method which drives the program. The program will
  * read a CSV file, validate it, add the values to a database, and then generate reports
- * based on what was added.
+ * based on what was added. JUnit tests in Test Packages.
  * 
  * @author Dan Blais
  * @version Java 17
  */
 public class Lab2Starter {
 
+    /**
+     * Default constructor
+     */
+    public Lab2Starter() {
+        
+    }
+    
     /**
      * Parses the file: bulk-import.csv Validates each item in each row and
      * updates the database accordingly. Then generates error and success reports
@@ -44,7 +51,7 @@ public class Lab2Starter {
         InputValidation inputValidation = InputValidation.getInstance(); //Reference to singleton InputValidation
         LinkedHashMap<String, String> parsedString; //Reference to hold map output by parser, maps column names to their parsed and split values
 
-       //Parse database properties file
+       //Parse database properties file and connect to DB
         try (InputStream in = new FileInputStream("data/database.properties")) {
             try (BufferedReader br = new BufferedReader(new InputStreamReader(in))) {
                 String out;
@@ -74,7 +81,7 @@ public class Lab2Starter {
                         csvParser.setKeys(out); //Get the column names from first line of file
                     } else {
                         parsedString = csvParser.parseRow(out);
-                        if (inputValidation.validate(parsedString)) {
+                        if (inputValidation.validate(parsedString)) { //Validate and then create new objects to hold values. Insert into DB.
                             Student student = new Student(Integer.parseInt(parsedString.get("studentId")), parsedString.get("firstName"), parsedString.get("lastName"));
                             Course course = new Course(parsedString.get("courseId"), parsedString.get("courseName"));
                             StudentCourse studentCourse = new StudentCourse(parsedString.get("term"), parsedString.get("year"));
@@ -83,10 +90,10 @@ public class Lab2Starter {
                             DBOperations.createStudentCourse(studentCourse, student, course);
                         }
                     }
-                    Reporter.getInstance().addErrorsToMap(rowCounter);
+                    Reporter.getInstance().addErrorsToMap(rowCounter); //Add row errors to map in Reporter class
                     rowCounter++;
                 }
-                Reporter.getInstance().generateReports();
+                Reporter.getInstance().generateReports(); //Generate import and error Sreports
             }
         } catch (IOException e) {
             Logger.getAnonymousLogger().log(Level.SEVERE, e.toString());

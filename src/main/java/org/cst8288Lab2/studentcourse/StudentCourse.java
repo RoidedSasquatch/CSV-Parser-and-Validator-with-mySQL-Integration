@@ -22,9 +22,9 @@ public class StudentCourse {
      */
     public StudentCourse(String term, String year) {
         switch(term) {
-            case "WINTER" -> this.term = 2;
-            case "SUMMER" -> this.term = 3;
-            case "FALL" -> this.term = 1;
+            case "WINTER" -> this.term = 1;
+            case "SUMMER" -> this.term = 2;
+            case "FALL" -> this.term = 3;
         }
         this.year = Integer.parseInt(year);
     }

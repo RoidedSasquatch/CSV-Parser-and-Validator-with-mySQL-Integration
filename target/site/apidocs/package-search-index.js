@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.cst8288Lab2"},{"l":"org.cst8288Lab2.connection"},{"l":"org.cst8288Lab2.dboperations"},{"l":"org.cst8288Lab2.parser"},{"l":"org.cst8288Lab2.reporting"},{"l":"org.cst8288Lab2.studentcourse"},{"l":"validation"}];updateSearchResults();

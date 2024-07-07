@@ -30,9 +30,10 @@ public class DBConnection {
 
     /**
      * Three parameter constructor which accepts the user's database credentials.
-     * @param serverUrl The server URL
-     * @param userString The username
-     * @param passwordString The password
+     * These are accepted from a Properties file. The constructor then uses the credentials
+     * to build connection strings.
+     * @param properties The Properties object which contains the user's database
+     * credentials.
      */
     private DBConnection(Properties properties) {
         this.serverUrl = "jdbc:" + properties.getProperty("db") + "://" + properties.getProperty("host") + ":" + properties.getProperty("port") + "/" + properties.getProperty("name");
@@ -44,9 +45,8 @@ public class DBConnection {
      * This method ensures that only a single instance of this class is created.
      * It accepts the user's credentials so that when the class is instantiated with
      * the first time the class variables are populated with the passed credentials.
-     * @param server The server URL
-     * @param userName The username
-     * @param password The 
+     * @param properties The Properties object which contains the user's database
+     * credentials.
      * @return A DBConnection object
      */
     public static DBConnection getInstance(Properties properties) {
@@ -66,7 +66,6 @@ public class DBConnection {
             try {
                 Class.forName(driverString);
                 connection = DriverManager.getConnection(serverUrl, userString, passwordString);
-                System.out.println("Connected");
             } catch(Exception e) {
                 Logger.getAnonymousLogger().log(Level.SEVERE, e.toString());
             }

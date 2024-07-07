@@ -64,4 +64,12 @@ public class CSVParser {
         }
         return valueMap;
     }
+
+    /**
+     * Getter for the keys variable
+     * @return An array of strings to be used as Map keys
+     */
+    public String[] getKeys() {
+        return keys;
+    }
 }
